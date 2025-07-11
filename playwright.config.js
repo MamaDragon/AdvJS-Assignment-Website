@@ -20,7 +20,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -30,15 +30,7 @@ export default defineConfig({
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox', 
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--no-first-run',
-        '--no-zygote',
-        '--single-process',
-        '--disable-gpu',
-        '--disable-background-timer-throttling',
-        '--disable-backgrounding-occluded-windows',
-        '--disable-renderer-backgrounding'
+        '--disable-dev-shm-usage'
       ]
     }
   },

@@ -4,7 +4,7 @@
   "description": "Advanced JavaScript Assignment Website demonstrating WeakMap, Type Guards, Proxy with Reflect, Set, Symbol, Generators, and Iterators",
   "main": "index.html",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.json",
+    "docs": "jsdoc -c jsdoc.json && node update-docs-nav.js",
     "docs:watch": "jsdoc -c jsdoc.json --watch",
     "docs:serve": "python3 -m http.server 8080 --directory docs",
     "docs:serve-node": "npx http-server docs -p 8080",

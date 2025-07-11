@@ -25,5 +25,6 @@
   "metadata": {
     "title": "Advanced JavaScript Assignment Documentation",
     "description": "API documentation for Advanced JavaScript features implementation"
-  }
+  },
+  "postGenerationScript": "node update-docs-nav.js"
 }
